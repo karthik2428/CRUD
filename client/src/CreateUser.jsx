@@ -9,7 +9,7 @@ function CreateUser() {
   const navigate= useNavigate()
   const submit=(e)=>{
     e.preventDefault()
-    axios.post("http://localhost:3001/createUser",{name,email,age})
+    axios.post("https://crud-eyjq.onrender.com/createUser",{name,email,age})
     .then((response)=>{
       console.log(response)
       navigate('/')
