@@ -11,7 +11,10 @@ app.use(cors({
 }));
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://shop24963:shop24963@cluster0.ncxgg.mongodb.net/crud")
+mongoose.connect("mongodb+srv://shop24963:shop24963@cluster0.ncxgg.mongodb.net/crud", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
 
 app.get("/", (req, res) => {
     UserModel.find({})
