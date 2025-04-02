@@ -5,9 +5,7 @@ const UserModel =require('./model/users')
 
 const app=express()
 app.use(cors({
-    origin: "https://crud-theta-nine-31.vercel.app", // Your frontend Vercel URL
-    methods: "GET, POST, PUT, DELETE",
-    credentials: true
+  origin: "https://crud-theta-nine-31.vercel.app" 
 }));
 app.use(express.json())
 
