@@ -6,7 +6,7 @@ function User() {
     const [users,setUsers]= useState([])
 
     useEffect(()=>{
-      axios.get('https://crud-eyjq.onrender.com')
+      axios.get('https://crud-eyjq.onrender.com/')
       .then(res=>setUsers(res.data))
       .catch(err=>console.log(err))
 })
